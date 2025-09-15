@@ -2,13 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Code4Care Healthcare Design System */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 210 40% 98%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -17,8 +15,9 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 217 91% 70%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -32,9 +31,35 @@ All colors MUST be HSL.
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
+    --emergency: 0 84% 60%;
+    --emergency-foreground: 0 0% 100%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 217 91% 60%;
+
+    /* Healthcare specific tokens */
+    --medical-blue: 217 91% 60%;
+    --medical-light: 217 91% 95%;
+    --medical-dark: 217 91% 30%;
+    --medical-gradient: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 70%));
+    --emergency-gradient: linear-gradient(135deg, hsl(0 84% 60%), hsl(0 84% 70%));
+    --success-gradient: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 46%));
+    
+    /* Shadows */
+    --shadow-medical: 0 10px 30px -10px hsl(217 91% 60% / 0.3);
+    --shadow-emergency: 0 10px 30px -10px hsl(0 84% 60% / 0.3);
+    --shadow-elegant: 0 4px 20px -4px hsl(217 91% 60% / 0.15);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --radius: 0.5rem;
 
@@ -56,7 +81,7 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 217.2 32.6% 17.5%;
     --foreground: 210 40% 98%;
 
     --card: 222.2 84% 4.9%;
@@ -65,8 +90,9 @@ All colors MUST be HSL.
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 217 91% 70%;
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -79,6 +105,23 @@ All colors MUST be HSL.
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
+
+    --emergency: 0 84% 60%;
+    --emergency-foreground: 0 0% 100%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    /* Healthcare specific tokens - dark mode */
+    --medical-blue: 217 91% 60%;
+    --medical-light: 217 91% 25%;
+    --medical-dark: 217 91% 80%;
+    --medical-gradient: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 70%));
+    --emergency-gradient: linear-gradient(135deg, hsl(0 84% 60%), hsl(0 84% 70%));
+    --success-gradient: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 46%));
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ConceptToCreationSuite</string>
+    <string name="title_activity_main">ConceptToCreationSuite</string>
+    <string name="package_name">com.yourname.concepttocreationsuite</string>
+    <string name="custom_url_scheme">com.yourname.concepttocreationsuite</string>
+</resources>
